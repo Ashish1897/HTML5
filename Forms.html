@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrartion Forms - Forms in HTML</title>
+    <style>
+         h1,h2{color: blue;}
+    </style>
+</head>
+<body>
+
+    <table cellpadding ="8" style="border: 1px;
+     background-color: coral; text-align: center;"
+    width="600">
+        <div style="text-align: center;">
+        <caption style="text-align: center;">
+            <h1>Coforge Technologies</h1>
+            <h2>User Registration Form</h2>
+        </caption>
+
+        <form name="registrationForm" action="">
+            <tr>
+                <td>First Name</td>
+                <td>
+                    <input type="text" name="fname" id="fname" 
+                    size="30" placeholder="Enter Your First Name"
+                    tabindex="1" style="border-color: aqua;"
+                    autofocus required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input type="text" name="lname" id="lname" 
+                    size="30" placeholder="Enter Your Last Name"
+                    tabindex="2" style="border-color: aqua;"
+                    required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>User Name</td>
+                <td>
+                    <input type="text" name="uname" id="uname" 
+                    size="30" placeholder="Enter Your User Name"
+                    tabindex="3" style="border-color: aqua;"
+                    required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="pass" id="pass" 
+                    size="30" placeholder="Enter Your Password"
+                    tabindex="4" style="border-color: aqua;"
+                    required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,14}"
+                    title="Must contain at least one number and one 
+                    uppercase and lowercase letter, 
+                    and at least 8 or max 14 characters">
+
+                    <!-- (?=.*[a-z]) - At least one lowercase letter(a - z). 
+                    (?=.*\d) - At least one digit(0-9).
+                    (?=.*[a-z]) - At least one lowercase letter(a - z).
+                    -->
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>Confirm Password</td>
+                <td>
+                    <input type="password" name="cpass" id="cpass" 
+                    size="30" placeholder="Enter Your Confirm Password"
+                    tabindex="5" style="border-color: aqua;"
+                    minlength = "8" maxlength="14"
+                    required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Education</td>
+                <td>
+                    <input type="checkbox" name="edu1" id="edu1"
+                    value="Graduate" tabindex="6"
+                    style="border-color: crimson;"> Graduate
+
+                    <input type="checkbox" name="edu2" id="edu2"
+                    value="Post Graduate" tabindex="7"
+                    style="border-color: crimson;"> Post Graduate
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" id="gender"
+                    value="Male" tabindex="8"
+                    style="border-color: crimson;"> Male
+
+                    <input type="radio" name="gender" id="gender"
+                    value="Female" tabindex="9"
+                    style="border-color: crimson;"> Female
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter Your Comments</td>
+                <td>
+                    <textarea tabindex="10" name="" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>State</td>
+                <td>
+                    <select name="state" id="state" tabindex="11">
+                        <option value="">Andhra Pradesh</option>
+                        <option value="">Bihar</option>
+                        <option value="">Himachal Pradesh</option>
+                        <option value="">Gujrat</option>
+                        <option value="">Punjab</option>
+                        <option selected>Uttar Pradesh</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- HTML5 Form Coontrols -->
+            
+            <tr>
+                <td>Programming Languages</td>
+                <td>
+                    <input list="languages" tabindex="12">
+                    <!-- Datalist - Gives AutoComplete Feature -->
+                    <datalist id="languages" name="languages">
+                        <option >C</option>
+                        <option >C++</option>
+                        <option >C#</option>
+                        <option >Java</option>
+                        <option >Python</option>
+                        <option >Ruby</option>
+                    </datalist>
+                </td>
+            </tr>
+        </form>
+    
+</body>
+</html>

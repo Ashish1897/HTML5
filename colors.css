@@ -1,0 +1,13 @@
+
+h2{border: 3px; border-color: violet;border-style: dashed;}
+
+#test{
+
+background-color:orange;
+opacity: 0.6;
+border-radius: 200px;
+text-align: center;
+padding: 20px;
+}
+
+h1{text-decoration: line-through;}

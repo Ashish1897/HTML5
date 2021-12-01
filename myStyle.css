@@ -1,0 +1,17 @@
+
+/* This is an external Stylesheet*/
+
+body{
+    background-color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+h1{
+    color: darkorange;
+
+}
+
+p{
+    color: darkred;
+}

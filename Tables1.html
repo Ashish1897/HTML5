@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body>
+    <h1>Student Information</h1>
+
+    <table border="1">
+        <tr bgcolor ="aqua">
+            <th>Roll No.</th>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>Contact No.</th>
+        </tr>
+
+        <tr>
+            <td>1001</td>
+            <td>James Gosling</td>
+            <td>Computer Science</td>
+            <td>8758938325</td>
+        </tr>
+        <tr>
+            <td>1002</td>
+            <td>Rod Jhonson</td>
+            <td>Electronics</td>
+            <td>9839775932</td>
+        </tr>
+
+        <tr>
+            <td>1003</td>
+            <td>Mark Zuckerberg</td>
+            <td>Civil</td>
+            <td>8789765432</td>
+        </tr>
+
+        <tr>
+            <td>1004</td>
+            <td>Bjarne Stroustrap</td>
+            <td>Information Technology</td>
+            <td>9783375932</td>
+        </tr>
+
+        <tr>
+            <td>1005</td>
+            <td>Dennis Ritchie</td>
+            <td>Civil</td>
+            <td>765432906</td>
+        </tr>
+
+    </table>
+
+    <!-- Rowspan & Colspan - merging of rows and columns-->
+    <h1> EMPLOYEE Information</h1>
+    <table border="2" cellpadding = "15" cellspacing ="5">
+        <tr bgcolor ="yellow">
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th colspan="2">Technologies</th>
+        </tr>
+
+        <tr>
+            <td>99901</td>
+            <td>Jhonson</td>
+            <td align="center" colspan="2">Spring Framework</td>
+        </tr>
+
+        <tr>
+            <td>88801</td>
+            <td>Mary</td>
+            <td align="center" colspan="2">Angular</td>
+        </tr>
+
+        <tr>
+            <td>77701</td>
+            <td>Harris</td>
+            <td align="center">Angular</td>
+            <td align="center">Nodejs</td>
+        </tr>
+
+        <tr>
+            <td>66601</td>
+            <td>Arun</td>
+            <td align="center" colspan="2">HTML5</td>
+        </tr>
+
+        <tr>
+            <td>55501</td>
+            <td>Naveen</td>
+            <td align="center">Hibernate</td>
+            <td align="center">JDBC</td>
+        </tr>
+
+        <tr>
+            <td>44401</td>
+            <td >Alex</td>
+            <td align="center" colspan = "2" rowspan="2">Javascript</td>
+        </tr>
+
+        <tr>
+            <td>33301</td>
+            <td rowspan="2">Praveen</td>
+            
+        </tr>
+
+    </table>
+
+</body>
+</html>
